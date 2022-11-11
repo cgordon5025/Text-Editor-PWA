@@ -31,8 +31,8 @@ export const getDb = async () => {
   const store = tx.objectStore('jate');
   const request = store.getAll();
   const result = await request;
-  console.log("testing", result)
-  console.log('result.value', result[0].content);
+  // console.log("testing", result)
+  // console.log('result.value', result[0].content);
   if (result.length > 0) {
     console.log('received data')
     return result[0].content
